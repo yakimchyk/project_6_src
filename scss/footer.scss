@@ -1,0 +1,185 @@
+.footer {
+   padding: 66px 0px 0px 0px;
+   @media (max-width: 1200px) {
+      padding: 50px 0px 0px 0px;
+   }
+   @media (max-width: 767px) {
+      padding: 40px 0px 0px 0px;
+   }
+   // .footer__top
+   &__top {
+      background-color: #484848;
+      padding: 63px 0px 61px 0px;
+      @media (max-width: 1200px) {
+         padding: 43px 0px 35px 0px;
+      }
+      @media (max-width: 767px) {
+         padding: 30px 0px 25px 0px;
+      }
+   }
+   // .footer__container-top
+   &__container-top {
+   }
+   // .footer__info-items
+   &__info-items {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 767px) {
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+   }
+   // .footer__info-item
+   &__info-item {
+      @media (min-width: 1201px) {
+         &:nth-child(1) {
+            flex: 0 1 338px;
+            margin: 0px 0px 0px 0px;
+         }
+         &:nth-child(2) {
+            flex: 0 1 204px;
+            margin: 0px 0px 0px 60px;
+         }
+         &:nth-child(3) {
+            flex: 0 1 214px;
+            margin: 0px 0px 0px 60px;
+         }
+         &:nth-child(4) {
+            flex: 0 1 196px;
+            margin: 0px 0px 0px 0px;
+         }
+      }
+      @media (min-width: 768px) and (max-width: 1200px) {
+         &:not(:last-child) {
+            margin: 0px 20px 0px 0px;
+         }
+         &:nth-child(1) {
+            flex: 0 1 338px;
+            margin: 0px 50px 0px 0px;
+         }
+      }
+      @media (max-width: 767px) {
+         flex: 0 1 31%;
+         margin: 0px 0px 0px 0px;
+         padding: 25px 0px 0px 0px;
+         &:nth-child(1) {
+            flex: 0 1 100%;
+            padding: 0px 0px 0px 0px;
+         }
+      }
+      @media (max-width: 550px) {
+         flex: 0 1 47%;
+         &:nth-child(1) {
+            flex: 0 1 100%;
+         }
+         &:nth-child(4) {
+            flex: 0 1 100%;
+         }
+      }
+      @media (max-width: 374px) {
+         flex: 0 1 100%;
+      }
+   }
+   // .footer__title
+   &__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+   }
+   // .footer__option
+   &__option {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #B0B0B0;
+      margin: 16px 0px 0px 0px;
+      width: fit-content;
+      .footer__info-item:not(:first-child) &:hover {
+         text-decoration: underline;
+      }
+      @media (max-width: 767px) {
+         line-height: 18px;
+         margin: 12px 0px 0px 0px;
+      }
+   }
+   // .footer__form
+   &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 0px 0px 0px;
+      height: 42px;
+      input {
+         &:focus {
+            outline: 3px solid #F9A82F;
+            outline-offset: -3px;
+         }
+      }
+      @media (max-width: 767px) {
+         margin: 18px 0px 0px 0px;
+         max-width: 480px;
+      }
+   }
+   // .footer__input
+   &__input {
+      flex: 1 1 auto;
+      display: block;
+      height: 100%;
+      width: 160px;
+      padding: 0px 8px 0px 11px;
+   }
+   // .footer__button
+   &__button {
+      flex: 0 1 128px;
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      color: #FFFFFF;
+      background-color: #B0B0B0;
+      height: 100%;
+      padding: 0px 6px;
+      cursor: pointer;
+      transition: all ease 0.2s;
+      &:hover {
+         background-color: #8D8D8D;
+      }
+   }
+   // .footer__bottom
+   &__bottom {
+      background-color: #383838;
+   }
+   // .footer__container-bottom
+   &__container-bottom {
+   }
+   // .footer__copyright-items
+   &__copyright-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      @media (max-width: 767px) {
+         height: 54px;
+      }
+   }
+   // .footer__copyright
+   &__copyright {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      color: #5F5F5F;
+   }
+   // .footer__logo
+   &__logo {
+      svg {
+         vertical-align: bottom;
+         fill: #626262;
+         transition: all ease 0.16s;
+         &:hover {
+            fill: #C031F2 !important;
+         }
+      }
+   }
+}
